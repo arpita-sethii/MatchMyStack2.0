@@ -1,0 +1,79 @@
+# ==========================
+# Root / Global
+# ==========================
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python caches
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# Virtual envs at root
+.venv/
+venv/
+env/
+ENV/
+deployenv/
+
+# Misc files you listed
+structure.txt
+structure1.txt
+updated_backend_structure.txt
+curl
+runtime.txt
+debug_*.py
+*_migration.py
+
+# ==========================
+# Backend folder (explicit)
+# ==========================
+backend/.env
+backend/.venv/
+backend/deployenv/
+backend/*.db
+backend/*.db.*
+backend/*.backup
+backend/app.db
+backend/app.db.backup*
+backend/tmp/
+backend/tmp/uploads/
+backend/app/uploads/
+backend/*.log
+backend/*.sqlite3
+backend/backups/
+backend/backups/
+backend/*.pyc
+backend/__pycache__/
+
+# Ignore generated/external binaries / exe from venv
+backend/**/Scripts/
+backend/**/Lib/
+backend/**/site-packages/
+
+# ==========================
+# Frontend (matchmystack-fd)
+# ==========================
+matchmystack-fd/node_modules/
+matchmystack-fd/dist/
+matchmystack-fd/build/
+matchmystack-fd/.env
+matchmystack-fd/.env.local
+matchmystack-fd/*.log
+
+# If you also have a client/ folder in other branches:
+# client/node_modules/
+# client/dist/
+# client/build/
+
+# ==========================
+# Deployment / Docker
+# ==========================
+.dockerignore
+backend/.git_backup/
+backend/.git_backup/**
