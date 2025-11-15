@@ -1,9 +1,0 @@
-[build]
-  base = "matchmystack-fd/client"
-  command = "npm ci && npm run build:client"
-  publish = "matchmystack-fd/client/dist/spa"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
